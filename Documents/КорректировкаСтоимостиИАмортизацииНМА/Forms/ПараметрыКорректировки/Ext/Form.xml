@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<SaveWindowSettings>false</SaveWindowSettings>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗавершитьРедактирование" id="10">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗавершитьРедактирование</CommandName>
+				<ExtendedTooltip name="ФормаЗавершитьРедактированиеРасширеннаяПодсказка" id="11"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="12">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="13"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаРедактируемыеПараметры" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа редактируемые параметры</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group editable parameters</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРедактируемыеПараметрыРасширеннаяПодсказка" id="27"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьРедактируемыеПараметры" id="23">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Редактирируемые параметры:</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Editable parameters:</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьРедактируемыеПараметрыКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="НадписьРедактируемыеПараметрыРасширеннаяПодсказка" id="25"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаРедактируемыеПараметры2" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа редактируемые параметры2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group editable parameters2</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРедактируемыеПараметры2РасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияОтступ1" id="32">
+							<Width>2</Width>
+							<ContextMenu name="ДекорацияОтступ1КонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ДекорацияОтступ1РасширеннаяПодсказка" id="34"/>
+						</LabelDecoration>
+						<UsualGroup name="Группа2" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа2</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group2</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="29"/>
+							<ChildItems>
+								<CheckBoxField name="КорректировкаСтоимости" id="1">
+									<DataPath>КорректировкаСтоимости</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КорректировкаСтоимостиКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="КорректировкаСтоимостиРасширеннаяПодсказка" id="3"/>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаУчтенаАмортизацияТекущегоМесяца1" id="54">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа учтена амортизация текущего месяца</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group current month depreciation is included</v8:content>
+										</v8:item>
+									</Title>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУчтенаАмортизацияТекущегоМесяца1РасширеннаяПодсказка" id="55"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияОтступ3" id="56">
+											<Width>2</Width>
+											<ContextMenu name="ДекорацияОтступ3КонтекстноеМеню" id="57"/>
+											<ExtendedTooltip name="ДекорацияОтступ3РасширеннаяПодсказка" id="58"/>
+										</LabelDecoration>
+										<CheckBoxField name="ВключаетСписаниеСтоимостиТекущегоМесяца" id="59">
+											<DataPath>ВключаетАмортизациюТекущегоМесяца</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>В сумму включено списание стоимости текущего месяца</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Amount includes write-off of current month cost</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВключаетСписаниеСтоимостиТекущегоМесяцаКонтекстноеМеню" id="60"/>
+											<ExtendedTooltip name="ВключаетСписаниеСтоимостиТекущегоМесяцаРасширеннаяПодсказка" id="61">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Если сумма включает списание стоимости текущего месяца, то при закрытии месяца не будет выполняться списание стоимости. Стоимость на конец месяца будет такой как указано в документе.
+Иначе при закрытии текущего месяца будет списана стоимость. Стоимость на конец месяца может отличаться от той, что указана в документе.</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>If the amount includes write-off of the cost of the current month, no cost will be written off upon month-end closing. The cost at the end of the month will be the same as specified in the document.
+Otherwise, the cost will be written off upon closing the current month. The cost at the end of the month may differ from the one specified in the document.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<CheckBoxField name="КорректировкаПервоначальнойСтоимости" id="51">
+									<DataPath>КорректировкаПервоначальнойСтоимости</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КорректировкаПервоначальнойСтоимостиКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="КорректировкаПервоначальнойСтоимостиРасширеннаяПодсказка" id="53"/>
+								</CheckBoxField>
+								<CheckBoxField name="КорректировкаАмортизации" id="4">
+									<DataPath>КорректировкаАмортизации</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КорректировкаАмортизацииКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="КорректировкаАмортизацииРасширеннаяПодсказка" id="6"/>
+									<Events>
+										<Event name="OnChange">КорректировкаАмортизацииПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаУчтенаАмортизацияТекущегоМесяца" id="40">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа учтена амортизация текущего месяца</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group current month depreciation is included</v8:content>
+										</v8:item>
+									</Title>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУчтенаАмортизацияТекущегоМесяцаРасширеннаяПодсказка" id="41"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияОтступ2" id="45">
+											<Width>2</Width>
+											<ContextMenu name="ДекорацияОтступ2КонтекстноеМеню" id="46"/>
+											<ExtendedTooltip name="ДекорацияОтступ2РасширеннаяПодсказка" id="47"/>
+										</LabelDecoration>
+										<CheckBoxField name="ВключаетАмортизациюТекущегоМесяца" id="37">
+											<DataPath>ВключаетАмортизациюТекущегоМесяца</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВключаетАмортизациюТекущегоМесяцаКонтекстноеМеню" id="38"/>
+											<ExtendedTooltip name="ВключаетАмортизациюТекущегоМесяцаРасширеннаяПодсказка" id="39">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Если сумма включает амортизацию текущего месяца, то при закрытии месяца не будет выполняться начисление амортизации. Амортизация на конец месяца будет такой как указано в документе.
+Иначе при закрытии текущего месяца будет начислена амортизация. Амортизация на конец месяца может отличаться от той, что указана в документе.</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>If the amount includes depreciation for the current month, depreciation will not be accrued upon month-end closing. Depreciation at the end of the month will be the same as specified in the document.
+Otherwise, depreciation will be accrued upon closing the current month. The depreciation at the end of the month may differ from the one specified in the document.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="КорректировкаВСвязиСИзменениемУчетнойПолитики" id="20">
+			<DataPath>КорректировкаВСвязиСИзменениемУчетнойПолитики</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка позволяет рассчитать сумму корректировки амортизации и отразить ее изменение в корреспонденции со счетом 84.
+Настройка доступна только на этапе перехода на учет НМА по ФСБУ 14.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>The setting allows you to calculate an amortization adjustment amount and record its change in the correspondence with account 84.
+The setting is available only when you switch to intangible asset accounting based on the Russian GAAP (FSBU) 14.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="КорректировкаВСвязиСИзменениемУчетнойПолитикиКонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="КорректировкаВСвязиСИзменениемУчетнойПолитикиРасширеннаяПодсказка" id="22"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="КорректировкаСтоимости" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Восстановительная стоимость</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Replacement cost</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КорректировкаАмортизации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Накопленная амортизация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Accumulated depreciation</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КорректировкаВСвязиСИзменениемУчетнойПолитики" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корректировка в связи с изменением учетной политики</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Adjustment due to change of accounting policy</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<FunctionalOptions>
+				<Item>FunctionalOption.РегламентированныйУчетВНА</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ВключаетАмортизациюТекущегоМесяца" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В сумму включена амортизация текущего месяца</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Amount includes depreciation of current month</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КорректировкаПервоначальнойСтоимости" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Первоначальная стоимость</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Initial cost</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Дата" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Date</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидОбъектовУчета" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид объектов учета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Kind of accounting objects</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыОбъектовУчетаНМА</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗавершитьРедактирование" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>OK</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗавершитьРедактирование</Action>
+		</Command>
+	</Commands>
+</Form>
